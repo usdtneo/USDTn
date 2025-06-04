@@ -13,12 +13,12 @@
             margin: 0;
         }
         .header-logo {
-            width: 10%; 
-            max-width: 150px; 
-            min-width: 80px; 
+            width: 150px; /* Tamaño fijo para mejor control */
+            height: 150px;
             margin: 0 auto 20px;
             display: block;
             border-radius: 15px;
+            object-fit: contain;
         }
         .container {
             background-color: white;
@@ -34,20 +34,43 @@
             color: #333;
             margin-top: 0;
         }
-        a {
+        .link {
             display: block;
             margin: 15px 0;
             text-decoration: none;
             color: #0077cc;
             font-weight: bold;
         }
-        a:hover {
+        .link:hover {
             text-decoration: underline;
+        }
+        .facebook-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1877f2;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            gap: 10px;
+            margin: 15px auto;
+            width: fit-content;
+        }
+        .facebook-btn:hover {
+            background-color: #166fe5;
+            text-decoration: none;
+        }
+        .facebook-icon {
+            width: 20px;
+            height: 20px;
+            fill: white;
         }
     </style>
 </head>
 <body>
-   
+    <!-- Asegúrate de que logo.png esté en la misma carpeta que tu index.html -->
     <img src="logo.png" alt="USDTneo Logo" class="header-logo">
     
     <div class="container">
@@ -56,29 +79,17 @@
         <p><strong>Contrato:</strong> TNVAVSebb1srqtLnHSBsMshFgtu1tboFLA</p>
         <p><strong>Suministro Inicial:</strong> 25,000,000,000,000.00 USDTn</p>
 
-        <a href="WhitePaper_USDTneo.pdf" target="_blank">📄 White Paper</a>
-        <a href="Auditoria_USDTneo.pdf" target="_blank">🛡️ Audit Report</a>
-        <a href="mailto:usdtneo@hotmail.com">✉️ Contact Info</a>
-        <a href="https://www.facebook.com/profile.php?id=61577166145348" target="_blank" style="
-  display: inline-flex;
-  align-items: center;
-  background-color: #1877f2;
-  color: white;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-family: sans-serif;
-  border-radius: 5px;
-  text-decoration: none;
-  gap: 10px;
-">
-  <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 320 512" fill="white">
-    <path d="M279.14 288l14.22-92.66h-88.91V127.89c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0c-73.16 0-121.14 44.38-121.14 124.72v70.62H22.89V288h81.33v224h100.2V288z"/>
-  </svg>
-  Seguinos en Facebook
-</a>
-
+        <a href="WhitePaper_USDTneo.pdf" class="link" target="_blank">📄 White Paper</a>
+        <a href="Auditoria_USDTneo.pdf" class="link" target="_blank">🛡️ Audit Report</a>
+        <a href="mailto:usdtneo@hotmail.com" class="link">✉️ Contact Info</a>
         
+        <!-- Botón de Facebook mejorado -->
+        <a href="https://www.facebook.com/profile.php?id=61577166145348" class="facebook-btn" target="_blank">
+            <svg class="facebook-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M279.14 288l14.22-92.66h-88.91V127.89c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0c-73.16 0-121.14 44.38-121.14 124.72v70.62H22.89V288h81.33v224h100.2V288z"/>
+            </svg>
+            Seguinos en Facebook
+        </a>
     </div>
 </body>
 </html>
-
