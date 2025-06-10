@@ -1,0 +1,19 @@
+{
+  "name": "USDTn Official Token List",  
+  "timestamp": "2024-06-11T00:00:00Z", 
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 1,                 
+      "address": "TNVAVSebb1srqtLnHSBsMshFgtu1tboFLA",  
+      "symbol": "USDTn",
+      "name": "USDTn Token",           
+      "decimals": 6,             
+      "logoURI": "https://usdtneo.github.io/USDTn/logo.png" 
+    }
+  ]
+}
